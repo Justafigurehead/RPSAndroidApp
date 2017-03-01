@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_rpsmain"
     android:layout_width="match_parent"
@@ -8,10 +8,83 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
     tools:context="example.codeclan.com.rpsandroidapp.RPSMainActivity">
 
     <TextView
+        android:id="@+id/scoreTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Scoreh1"
+        android:gravity="center_horizontal"
+        android:textSize="30sp"
+        />
+
+    <TextView
+        android:id="@+id/scoreTally"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/Score"
+        />
+
+
+    <TextView
+        android:id="@+id/RockView"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:textSize="25sp"
+        android:text="@string/Rock"
+        />
+
+    <Button
+        android:id="@+id/RockBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+        android:text="@string/ChooseRock"
+        android:onClick="onRPSClick"
+        />
+
+    <TextView
+        android:id="@+id/PaperView"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:textSize="25sp"
+        android:text="@string/Paper"
+
+        />
+
+    <Button
+        android:id="@+id/PaperBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ChoosePaper"
+        android:onClick="onRPSClick"
+        />
+
+    <TextView
+        android:id="@+id/ScissorsView"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:textSize="25sp"
+        android:text="@string/Scissors"
+
+
+        />
+
+    <Button
+        android:id="@+id/ScissorsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ChooseScissors"
+        android:onClick="onRPSClick"
+        />
+
+</LinearLayout>
